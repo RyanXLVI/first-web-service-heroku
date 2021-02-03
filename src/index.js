@@ -49,7 +49,8 @@ const getRandomNumberJSON = (max=1) => {
     const number = Math.random() * max;
     const responseObj = {
         timestamp: new Date(),
-        number: number
+        number: number,
+        change : "made"
     };
     return JSON.stringify(responseObj);
 }
